@@ -9,7 +9,7 @@ function setHeaders(res) {
   res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
 	res.setHeader('Content-Type', 'application/json'); 
   res.setHeader('Access-Control-Allow-Credentials', true)
-  res.setHeader('Access-Control-Allow-Origin', 'meteo-app.vercel.app')
+  res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS')
 }
 
